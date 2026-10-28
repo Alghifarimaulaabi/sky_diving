@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T19:11:30.000Z",
+  "title": "Design System: Bandung Apnea Community x Every Dive.id",
+  "extensions": {
+    "colorMeta": {
+      "abyss-navy": {
+        "role": "neutral",
+        "displayName": "Abyss Navy",
+        "canonical": "#04152B",
+        "tonalRamp": ["#020b17", "#04152B", "#08264e", "#0e3a75", "#16519f", "#2670cd", "#649ee6", "#bcd7f6"]
+      },
+      "midnight-trench": {
+        "role": "neutral",
+        "displayName": "Midnight Trench",
+        "canonical": "#071f3d",
+        "tonalRamp": ["#030e1d", "#071f3d", "#0d3567", "#154d92", "#1f69c3", "#4388dc", "#82b2ea", "#cde1f7"]
+      },
+      "bioluminescent-cyan": {
+        "role": "primary",
+        "displayName": "Bioluminescent Cyan",
+        "canonical": "#00C2D1",
+        "tonalRamp": ["#002b2f", "#00555c", "#008a95", "#00C2D1", "#22dced", "#62e7f3", "#a6f3fa", "#e0fcfe"]
+      },
+      "living-coral": {
+        "role": "secondary",
+        "displayName": "Living Coral",
+        "canonical": "#FF6B4A",
+        "tonalRamp": ["#421107", "#7a220f", "#b6371c", "#e7502e", "#FF6B4A", "#ff9078", "#ffbbae", "#ffe4de"]
+      },
+      "safety-amber": {
+        "role": "tertiary",
+        "displayName": "Safety Amber",
+        "canonical": "#ffb020",
+        "tonalRamp": ["#3d2600", "#704700", "#a86c00", "#e09404", "#ffb020", "#ffc861", "#ffdea1", "#fff3db"]
+      },
+      "whatsapp-emerald": {
+        "role": "tertiary",
+        "displayName": "WhatsApp Emerald",
+        "canonical": "#25D366",
+        "tonalRamp": ["#073518", "#0f5e2c", "#188d43", "#21bd5a", "#25D366", "#5ee18e", "#9df0bc", "#defbe9"]
+      },
+      "glacial-white": {
+        "role": "neutral",
+        "displayName": "Glacial White",
+        "canonical": "#F4FBFF",
+        "tonalRamp": ["#16232d", "#2e4252", "#4a677d", "#6f90ab", "#9db8cc", "#c5dbe9", "#e2eff8", "#F4FBFF"]
+      },
+      "mist-blue": {
+        "role": "neutral",
+        "displayName": "Mist Blue",
+        "canonical": "#9db8cc",
+        "tonalRamp": ["#152029", "#293d4c", "#415e75", "#5f84a1", "#80a5c3", "#9db8cc", "#c3d6e4", "#e8eff5"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Hero",
+        "purpose": "Major impact hero statements on dark oceanic canvases."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Anchors content blocks and feature sections."
+      },
+      "title": {
+        "displayName": "Card & Dialog Title",
+        "purpose": "Component headings and gear product titles."
+      },
+      "body": {
+        "displayName": "Body & Instruction",
+        "purpose": "Educational copy, descriptions, and community narrative."
+      },
+      "label": {
+        "displayName": "Section Eyebrow",
+        "purpose": "Uppercase tracking labels for section orientation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-cyan-glow",
+        "value": "0 8px 24px rgba(0, 194, 209, 0.35)",
+        "purpose": "Luminous underwater glow upon hovering active elements."
+      },
+      {
+        "name": "kit-drawer",
+        "value": "0 12px 32px rgba(0, 0, 0, 0.40)",
+        "purpose": "Separates persistent floating checkout drawer from body content."
+      },
+      {
+        "name": "wa-float",
+        "value": "0 6px 20px rgba(0, 0, 0, 0.35)",
+        "purpose": "Floating quick-action WhatsApp button elevation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-buoyant",
+        "value": "cubic-bezier(0.2, 0.9, 0.3, 1.15)",
+        "purpose": "Spring-like buoyancy for entry sheets and floating docks."
+      },
+      {
+        "name": "transition-standard",
+        "value": "0.3s ease",
+        "purpose": "Card hover lifts and color state shifts."
+      }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "600px" },
+      { "name": "tablet", "value": "760px" },
+      { "name": "desktop", "value": "960px" },
+      { "name": "wide", "value": "1140px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Cyan gradient pill button with high-contrast navy typography.",
+      "html": "<button class=\"ds-btn-primary\">Mulai Freedive</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.85rem 1.5rem; border-radius: 999px; background: linear-gradient(135deg, #00C2D1, #1de0ee); color: #04152B; font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600; border: none; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0, 194, 209, 0.35); }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Frosted border pill button for secondary calls-to-action.",
+      "html": "<button class=\"ds-btn-ghost\">Gabung BAC</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.85rem 1.5rem; border-radius: 999px; background: transparent; color: #F4FBFF; border: 1.5px solid rgba(255, 255, 255, 0.12); font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: border-color 0.2s ease, transform 0.2s ease; } .ds-btn-ghost:hover { border-color: #00C2D1; transform: translateY(-2px); }"
+    },
+    {
+      "name": "WhatsApp Launch Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Emerald WhatsApp consultation trigger with icon.",
+      "html": "<a class=\"ds-btn-wa\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12a8 8 0 0 1-11.8 7L4 20.5l1.5-4.8A8 8 0 1 1 21 12z\"/></svg>Kirim ke WhatsApp</a>",
+      "css": ".ds-btn-wa { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; width: 100%; padding: 0.85rem 1.5rem; border-radius: 999px; background: #25D366; color: #06301a; font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600; text-decoration: none; cursor: pointer; transition: box-shadow 0.2s ease; } .ds-btn-wa svg { margin-right: 8px; } .ds-btn-wa:hover { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35); }"
+    },
+    {
+      "name": "Submerged Glass Card",
+      "kind": "card",
+      "refersTo": "card-glass",
+      "description": "Translucent frosted container with hairline pelagic border and soft hover lift.",
+      "html": "<div class=\"ds-card\"><h3>Latihan Kolam Sesko AD</h3><p>Sesi rutin statis dan dinamis setiap pekan bareng buddy terlatih.</p></div>",
+      "css": ".ds-card { background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 20px; padding: 24px; color: #F4FBFF; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: transform 0.3s ease, border-color 0.3s ease; } .ds-card h3 { font-family: 'Sora', sans-serif; font-size: 1.15rem; margin-bottom: 8px; } .ds-card p { font-family: 'Inter', sans-serif; color: #9db8cc; font-size: 0.95rem; line-height: 1.6; margin: 0; } .ds-card:hover { transform: translateY(-6px); border-color: #00C2D1; }"
+    },
+    {
+      "name": "Category Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Horizontal snap pill filter with active cyan fill.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"true\"><span>Masker</span><small>2</small></button>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 999px; background: #00C2D1; border: 1px solid #00C2D1; color: #04152B; font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; cursor: pointer; } .ds-chip small { font-size: 0.78rem; font-variant-numeric: tabular-nums; opacity: 0.85; }"
+    },
+    {
+      "name": "Floating Kit Bar",
+      "kind": "custom",
+      "refersTo": "kitbar",
+      "description": "Persistent floating consultation drawer with counter and WhatsApp send button.",
+      "html": "<div class=\"ds-kitbar\"><div class=\"ds-kitbar-txt\"><strong>Kit saya</strong><span>3 item siap dikirim</span></div><button class=\"ds-kitbar-btn\">Lihat &amp; kirim</button></div>",
+      "css": ".ds-kitbar { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px 8px 18px; border-radius: 20px; background: #071f3d; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.40); min-height: 60px; max-width: 500px; } .ds-kitbar-txt strong { display: block; font-family: 'Sora', sans-serif; font-size: 0.98rem; color: #F4FBFF; } .ds-kitbar-txt span { font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #9db8cc; } .ds-kitbar-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #25D366; color: #06301a; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 0.92rem; border: none; cursor: pointer; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Bioluminescent Abyss",
+    "overview": "The visual world evokes the stillness, depth, and focused clarity of descending into the ocean. Rich oceanic dark backgrounds anchor the interface into deep pelagic depths (#04152B), creating an immersive, serene canvas that immediately distinguishes the experience from sterile corporate web design. Surfaces feel tactile and suspended underwater, floating as translucent frosted glass planes with subtle optical borders and soft backdrop blurring.",
+    "keyCharacteristics": [
+      "Deep pelagic dark canvas with oceanic radial vignettes and subtle atmospheric gradients.",
+      "Crisp bioluminescent accents used with surgical purpose, avoiding sensory overload.",
+      "Translucent frosted glass containers (backdrop-filter: blur(10px)) with hairline borders.",
+      "Ergonomic, thumb-first mobile layout featuring bottom sheets, an interactive kit bar, and sticky tab navigation.",
+      "Uncompromising rejection of discount badges, cheesy tropical clipart, and generic corporate SaaS blues."
+    ],
+    "rules": [
+      {
+        "name": "The Luminous Scarcity Rule",
+        "body": "Bioluminescent cyan (#00C2D1) must never cover more than 10% of any viewport. Its power comes from glowing out of deep darkness; bathing large surfaces in cyan destroys its signal value.",
+        "section": "colors"
+      },
+      {
+        "name": "The Safety Exclusivity Rule",
+        "body": "Safety Amber (#ffb020) is strictly reserved for safety rules, medical disclaimers, and dive risks. It may never be used for sales badges, urgency counters, or general notifications.",
+        "section": "colors"
+      },
+      {
+        "name": "The 16px Form Floor Rule",
+        "body": "All text inputs, textareas, and select menus must maintain at least 16px font size to prevent iOS Safari from triggering disruptive auto-zoom upon field focus.",
+        "section": "typography"
+      },
+      {
+        "name": "The Frosted Layering Rule",
+        "body": "Elevation is expressed primarily through backdrop blur (10px to 16px) and hairline border contrast (rgba(255, 255, 255, 0.12)). Heavy black shadows are prohibited on static content cards.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do maintain the 48px minimum touch target for all interactive elements across mobile viewports.",
+      "Do route all gear and membership transactions into formatted, consultative WhatsApp messages.",
+      "Do preserve the dual-brand parity between Bandung Apnea Community and Every Dive.id.",
+      "Do pair every depth, apnea technique, or gear mention with responsible safety reminders and buddy checks.",
+      "Do use tabular-nums on all price displays, depth gauges, and quantity steppers."
+    ],
+    "donts": [
+      "Don't add fake discount countdown timers, high-pressure scarcity badges, or strike-through sale pricing.",
+      "Don't use generic stock photography of scuba divers with oxygen tanks or cartoon sea animals.",
+      "Don't place opaque solid grey or white cards that destroy the deep oceanic immersion.",
+      "Don't use Safety Amber for anything other than actual physiological warnings and safety protocols.",
+      "Don't introduce multi-step e-commerce shopping carts or payment gateways that break the direct WhatsApp consultation model."
+    ]
+  }
+}
