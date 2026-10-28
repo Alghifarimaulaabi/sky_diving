@@ -1,15 +1,20 @@
 {
-  "name": "fundive.id x Bandung Apnea Community",
-  "short_name": "fundive x BAC",
-  "description": "Panduan freedive, gear guide, dan komunitas untuk anak muda.",
+  "name": "Bandung Apnea Community x Every Dive.id",
+  "short_name": "BAC x Every Dive.id",
+  "description": "Panduan freedive, gear guide, dan komunitas untuk anak muda. Dive into the blue.",
   "lang": "id",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#04152B",
   "theme_color": "#04152B",
   "icons": [
-    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" }
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
